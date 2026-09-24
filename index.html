@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Kyoto, Japan, through its torii gates, bamboo groves, and temple streets.">
+    <title>Explore Kyoto</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background-color: #ffffff;
+            color: #263247;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        a { color: #a83224; text-underline-offset: 4px; }
+        a:hover { color: #263247; }
+        a:focus-visible { outline: 3px solid #a83224; outline-offset: 5px; }
+        .skip-link { display: block; padding: 5px 6%; font-size: 14px; }
+        header { padding: 18px 6%; border-bottom: 1px solid #d6dde5; }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .brand { font-family: Georgia, serif; font-size: 27px; color: #263247; text-decoration: none; }
+        nav { display: flex; gap: 28px; }
+        nav a { color: #263247; text-decoration: none; padding: 6px 0; }
+        nav a:hover, .current { border-bottom: 3px solid #a83224; }
+        main { width: 88%; max-width: 1100px; margin: 0 auto; }
+        h1, h2, h3 { font-family: Georgia, serif; font-weight: normal; line-height: 1.15; }
+        h1 { margin: 12px 0 24px; font-size: 76px; }
+        h2 { margin: 0 0 20px; font-size: 38px; }
+        h3 { font-size: 26px; }
+        p { max-width: 65ch; }
+        #hero { padding: 48px 0 60px; border-bottom: 4px solid #a83224; }
+        .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+        .location { color: #a83224; font-size: 16px; }
+        .intro { font-size: 20px; }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            border: 2px solid #a83224;
+            background-color: #a83224;
+            color: white;
+            text-decoration: none;
+        }
+        .button:hover { background-color: white; color: #a83224; }
+        figure { margin: 0; }
+        img { display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 6px; }
+        .hero-photo { max-width: 390px; }
+        figcaption { margin-top: 10px; color: #536174; font-size: 13px; line-height: 1.6; }
+        section { padding: 52px 0; }
+        .highlights { padding: 20px 28px; background-color: #edf3f0; border-left: 4px solid #46664f; }
+        .highlights h3 { margin: 0 0 12px; }
+        ul { padding-left: 23px; list-style-type: square; }
+        li { margin: 9px 0; }
+        .closing { padding: 30px; margin: 0 0 52px; background-color: #edf1f7; text-align: center; }
+        .closing h2 { font-size: 30px; margin-bottom: 10px; }
+        footer { background-color: #263247; color: white; padding: 24px 6%; font-size: 14px; text-align: center; }
+        @media (max-width: 700px) {
+            .header-inner { align-items: flex-start; flex-direction: column; gap: 10px; }
+            nav { gap: 24px; }
+            .split { grid-template-columns: 1fr; gap: 28px; }
+            h1 { font-size: 56px; }
+            h2 { font-size: 32px; }
+            #hero { padding-top: 30px; }
+            section { padding: 36px 0; }
+            .hero-photo { max-width: 340px; }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="index.html">Kyoto</a>
+            <nav aria-label="Main navigation">
+                <a class="current" href="index.html" aria-current="page">Explore</a>
+                <a href="page2.html">Things to do</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="split">
+            <div>
+                <span class="location">Kyoto, Japan</span>
+                <h1>Take the<br>scenic path.</h1>
+                <p class="intro">Walk beneath bright red torii gates, look up through a canopy of bamboo, and follow narrow streets toward hillside temples. Kyoto gives you plenty of reasons to slow down and explore on foot. Leave room in your day for a tea break and the places you notice along the way.</p>
+                <a class="button" href="page2.html">Find things to do</a>
+            </div>
+            <figure class="hero-photo">
+                <img src="fushimi-inari.jpg" alt="Vermilion torii gates forming a long passage through green woodland at Fushimi Inari Taisha" width="2592" height="3456">
+                <figcaption>Fushimi Inari Taisha. Photo by <a href="https://commons.wikimedia.org/wiki/File:The_Famous_%22Thousand_Torii_Gates%22_behind_Fushimi_Inari_Shrine_in_Kyoto_(35450836263).jpg">Ankur P</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>. Unchanged.</figcaption>
+            </figure>
+        </section>
+
+        <section class="split">
+            <div>
+                <h2>Follow the red gates</h2>
+                <p>At Fushimi Inari Taisha, rows of vermilion gates lead into the wooded slopes of Mount Inari. The repeated gateways make even a short walk feel memorable, with flashes of green between the pillars. Look for the shrine's fox statues as you explore, and give yourself time to enjoy the details along the path.</p>
+                <a href="https://inari.jp/en/">Explore the official Fushimi Inari guide</a>
+            </div>
+            <aside class="highlights" aria-label="Kyoto highlights">
+                <h3>Places to explore</h3>
+                <ul>
+                    <li>Walk through the torii gates at Fushimi Inari Taisha.</li>
+                    <li>See the tall bamboo in Arashiyama.</li>
+                    <li>Take in the view from Kiyomizu-dera's wooden stage.</li>
+                    <li>Browse the shops along Ninenzaka and Sannenzaka.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="split">
+            <figure>
+                <img src="arashiyama.jpg" alt="Tall green bamboo stalks rising toward a sunlit canopy in Arashiyama, Kyoto" width="3264" height="2448" loading="lazy">
+                <figcaption>Arashiyama bamboo. Photo by <a href="https://commons.wikimedia.org/wiki/File:Bamboo_forest_arashiyama.jpg">Helito</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Unchanged.</figcaption>
+            </figure>
+            <div>
+                <h2>A morning among bamboo</h2>
+                <p>Head west to Arashiyama for bamboo that stretches high above the path. The green stalks and filtered light give this part of Kyoto a different feel from the city streets. After the grove, continue toward Togetsukyo Bridge for river views, or spend more time exploring the area's temple gardens. An early start can help you enjoy the popular paths before they get busy.</p>
+                <a href="https://kyoto.travel/en/travel-inspiration/things-to-keep-in-mind-while-exploring-kyoto-and-its-kiyomizu-arashiyama-and-gion-areas/">Read Kyoto's guide to exploring the area</a>
+            </div>
+        </section>
+
+        <section class="closing">
+            <h2>Make time for Kyoto</h2>
+            <a class="button" href="page2.html">Explore a day in Higashiyama</a>
+        </section>
+    </main>
+    <footer>Kyoto travel website &copy; 2026 Kenneth Hendricks</footer>
+</body>
+</html>
